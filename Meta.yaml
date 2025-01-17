@@ -1,0 +1,30 @@
+package:
+  name: satannot
+  version: "1.0.0"
+
+source:
+  path: .
+
+build:
+  noarch: python
+  script: python setup.py install
+
+requirements:
+  build:
+    - python >=3.8
+    - setuptools
+  run:
+    - python >=3.8
+    - biopython
+    - polars
+    - blast
+
+about:
+  home: https://github.com/yourusername/satannot
+  summary: "A BLAST-based annotation and sequence extraction tool"
+  license: MIT
+  license_file: LICENSE
+
+extra:
+  recipe-maintainers:
+    - yourusername

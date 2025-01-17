@@ -1,0 +1,9 @@
+name: satannot-env
+channels:
+  - conda-forge
+  - bioconda
+dependencies:
+  - python>=3.8
+  - blast  # NCBI BLAST+ suite
+  - polars
+  - biopython
