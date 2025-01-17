@@ -24,6 +24,7 @@ If you don't have NCBI-BLAST installed, best is done so with mamba/conda and to 
 
 ```
 mamba create -c bioconda -c conda-forge -n satannot python=3.12 blast
+mamba activate satannot
 ```
 
 Then you can install satannot directly from GitHub:
