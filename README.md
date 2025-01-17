@@ -23,8 +23,7 @@ Ensure the following are installed on your system:
 If you don't have NCBI-BLAST installed, best is done so with mamba/conda and to install `satannot` in a environment:
 
 ```
-mamba create -n -c bioconda satannot
-mamba install blast
+mamba create -c bioconda -c conda-forge -n satannot python=3.12 blast
 ```
 
 Then you can install satannot directly from GitHub:
