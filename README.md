@@ -48,12 +48,12 @@ satannot extract genome.fasta annotations.gff output_directory
 ```
 ---
 
-License
+# License
 This project is licensed under the MIT License (LICENSE).
 
 ---
 
-Contributing
+# Contributing
 Contributions are welcome! Feel free to submit issues or pull requests to enhance the tool.
 
 ---
