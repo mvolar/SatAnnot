@@ -1,0 +1,4 @@
+[console_scripts]
+satannot = satannot.__main__:main
+satannot-annotate = satannot.annotate:annotate
+satannot-extract = satannot.extract:extract

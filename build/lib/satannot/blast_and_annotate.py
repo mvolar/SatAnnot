@@ -20,7 +20,7 @@ def cleanup_database_files(subject_file):
         print (f"removing databse file:{file}")
         os.remove(file)
 
-def run_blast(query, subject, output, evalue=10):
+def run_blast(query, subject, output,threads, evalue=10):
     # Define the BLAST command
     blast_cmd = [
         'blastn',  # Replace with the appropriate BLAST command (e.g., blastp, blastx, etc.)
@@ -31,17 +31,17 @@ def run_blast(query, subject, output, evalue=10):
         '-outfmt', str(6),
         '-max_target_seqs', str(10000),
         '-task', "blastn",
-        '-num_threads', str(2)
+        '-num_threads', str(threads)
     ]
     # Run the BLAST command
     subprocess.run(blast_cmd)
 
 
-def annotate(sat_path, genome_path, blast_tmp="./tmp_blast.csv",gff_out=None,perc_id_filter=70,qcovhsp_filter=70):
+def annotate(sat_path, genome_path, blast_tmp="./tmp_blast.csv",gff_out=None,perc_id_filter=70,qcovhsp_filter=70,threads=8):
     logger.info("Creating a BLAST database")
     create_blast_database(genome_path)
     logger.info("Running a BLAST search")
-    run_blast(sat_path, genome_path, blast_tmp, 10)
+    run_blast(sat_path, genome_path, blast_tmp,threads, 10)
     cleanup_database_files(genome_path)
 
     df = utils.read_blast_output(blast_tmp)

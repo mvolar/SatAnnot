@@ -1,0 +1,16 @@
+LICENSE
+README.md
+setup.py
+satannot/__init__.py
+satannot/__main__.py
+satannot/blast_and_annotate.py
+satannot/constants.py
+satannot/extract.py
+satannot/logging_config.py
+satannot/utils.py
+satannot.egg-info/PKG-INFO
+satannot.egg-info/SOURCES.txt
+satannot.egg-info/dependency_links.txt
+satannot.egg-info/entry_points.txt
+satannot.egg-info/requires.txt
+satannot.egg-info/top_level.txt
