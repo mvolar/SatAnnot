@@ -16,6 +16,8 @@ def main():
                                  help='Percentage identity filter (default: 70.0)')
     annotate_parser.add_argument('--qcovhsp_filter', type=float, default=70.0,
                                  help='Query coverage filter (default: 70.0)')
+    annotate_parser.add_argument('--threads', type=integer, default=8,
+                                 help='Number of BLAST threads')
     annotate_parser.set_defaults(func=annotate)
 
   # Inside __main__.py
