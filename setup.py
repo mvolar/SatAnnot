@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='satannot',
-    version='1.0.0',
+    version='1.0.1',
     author='Your Name',
     author_email='your_email@example.com',
     description='A BLAST-based annotation and sequence extraction tool',
