@@ -18,9 +18,11 @@ def main():
                                  help='Query coverage filter (default: 70.0)')
     annotate_parser.add_argument('--threads', type=int, default=8,
                                  help='Number of BLAST threads')
+    annotate_parser.add_argument('--short', action='store_true',
+                                 help='Use blastn-short task for short sequences')
     annotate_parser.set_defaults(func=annotate)
 
-  # Inside __main__.py
+    # Inside __main__.py
     extract_parser = subparsers.add_parser('extract', help='Extract monomers from a genome and annotation file')
     extract_parser.add_argument('genome_path', help='Path to the genome FASTA file')
     extract_parser.add_argument('annotation_path', help='Path to the annotation GFF file')
