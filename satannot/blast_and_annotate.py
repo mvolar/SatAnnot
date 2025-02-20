@@ -31,7 +31,9 @@ def run_blast(query, subject, output, threads, evalue=10, short=False):
         '-outfmt', str(6),
         '-max_target_seqs', str(10000),
         '-task', "blastn-short" if short else "blastn",
-        '-num_threads', str(threads)
+        '-num_threads', str(threads),
+        '-dust', 'no',  # Add the -dust no flag
+        '-soft_masking', 'false'  # Add the -soft_masking false flag
     ]
     # Run the BLAST command
     subprocess.run(blast_cmd)
