@@ -2,13 +2,13 @@ from setuptools import setup, find_packages
 
 setup(
     name='satannot',
-    version='1.0.1',
-    author='Your Name',
-    author_email='your_email@example.com',
+    version='1.0.2',
+    author='Marin Volarić',
+    author_email='marin.volaric1@gmail.com',
     description='A BLAST-based annotation and sequence extraction tool',
     long_description=open('README.md').read(),
     long_description_content_type='text/markdown',
-    url='https://github.com/yourusername/satannot',
+    url='https://github.com/mvolar/satannot',
     packages=find_packages(),
     install_requires=[
         'polars',

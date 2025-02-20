@@ -1,10 +1,10 @@
 Metadata-Version: 2.2
 Name: satannot
-Version: 1.0.1
+Version: 1.0.2
 Summary: A BLAST-based annotation and sequence extraction tool
-Home-page: https://github.com/yourusername/satannot
-Author: Your Name
-Author-email: your_email@example.com
+Home-page: https://github.com/mvolar/satannot
+Author: Marin Volarić
+Author-email: marin.volaric1@gmail.com
 Classifier: Programming Language :: Python :: 3
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Operating System :: OS Independent
